@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RevoU Mini Project</title>
+</head>
+<body>
+    <header>
+        <img src="assets/revou-logo.png" alt="Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Our Profile</a>
+            <a href="#">Achievement</a>
+            <a href="#">Message Us</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <section class="welcome-section">
+        <div class="welcome-message">
+            <h1 id="welcome-message">Welcome, RevoU Students!</h1>
+        </div>
+    </section>
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="assets/digitalmarketing.png" alt="Digital Marketing">
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/product.png" alt="Product">
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/dataanalyst.png" alt="Data Analyst">
+            </div>
+        </div>
+    </section>
+    <section class="people-section">
+        <div class="person-card">
+            <div class="person-hero">
+                <img src="assets/hero1.png" alt="Person 1 Hero" class="rounded-hero">
+            </div>
+            <div class="person-info">
+                <h2>John Doe</h2>
+            </div>
+        </div>
+        <div class="person-card">
+            <div class="person-hero">
+                <img src="assets/hero2.png" alt="Person 2 Hero" class="rounded-hero">
+            </div>
+            <div class="person-info">
+                <h2>Jane Smith</h2>
+            </div>
+        </div>
+        <div class="person-card">
+            <div class="person-hero">
+                <img src="assets/hero3.png" alt="Person 3 Hero" class="rounded-hero">
+            </div>
+            <div class="person-info">
+                <h2>Jane Smith</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="row">
+            <div class="column">
+                <div class="form-container">
+                    <form id="input-form" class="form">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" required>
+                        <br>
+                        <label for="tanggal">Tanggal</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                        <br>
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="jenis-kelamin" value="Laki-laki" required>
+                                Laki-laki
+                            </label>
+                            <label>
+                                <input type="radio" name="jenis-kelamin" value="Perempuan" required>
+                                Perempuan
+                            </label>
+                        </div>
+                        <br>
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="output-container">
+                    <div class="output-cards">
+                        <!-- Output cards will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>TEST</h2>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

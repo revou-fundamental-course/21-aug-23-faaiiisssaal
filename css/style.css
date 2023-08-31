@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9626c2;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header img {
+    max-width: 40px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+}
+
+/* body or section 1 */
+
+.welcome-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.welcome-message {
+    text-align: start;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.welcome-message h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 16px;
+    color: #555;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 1s ease-in-out;
+}
+
+/* body 2 */
+
+.people-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.person-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+}
+
+.person-hero img.rounded-hero {
+    border-radius: 50%;
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.person-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.person-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .people-section {
+        justify-content: space-between;
+    }
+
+    .person-card {
+        max-width: calc(33.333% - 20px);
+    }
+
+    .person-hero img.rounded-hero {
+        margin-bottom: 0;
+    }
+}
+
+/* body 3 */
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container {
+    background-color: #aaa;
+    order: 1; /* Default order, will be adjusted for mobile */
+}
+
+.output-container {
+    background-color: #bbb;
+    flex-direction: column;
+    order: 2; /* Default order, will be adjusted for mobile */
+}
+
+@media (max-width: 767px) {
+    .form-container {
+        order: 2; /* Change order for mobile */
+    }
+
+    .output-container {
+        background-color: #bbb;
+        flex-direction: row;
+        order: 2; /* Default order, will be adjusted for mobile */
+    }
+}
+
+.form-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output-cards {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.output-card {
+    background-color: #d7e5eb;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
